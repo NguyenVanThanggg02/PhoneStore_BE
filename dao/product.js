@@ -56,6 +56,17 @@ const fetchSimilarProduct = async (id) => {
     throw new Error(error.toString());
   }
 };
+const fetchProductByBrand  = async(id) =>{
+  try {
+    const brandId = await Product.find({ brand: id })
+    .populate("configuration")
+    .populate("brand")
+    .populate("comments").exec()
+    return brandId
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+}
 
 export default {
   fetchAll,
@@ -63,4 +74,5 @@ export default {
   deleteProductById,
   fetchLatestProduct,
   fetchSimilarProduct,
+  fetchProductByBrand
 };

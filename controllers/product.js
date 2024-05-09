@@ -64,10 +64,19 @@ const getSimilarProducts = async (req, res) => {
     });
   }
 };
+const getProductByBrand = async (req, res) => {
+  try {
+    const brandId = await productDao.fetchProductByBrand(req.params.id)
+    res.status(200).json(brandId)
+  } catch (error) {
+    res.status(500).json({ error: error.toString() });
+  }
+}
 export default {
   getAllProducts,
   getProductById,
   removeProductById,
   getLatestProducts,
   getSimilarProducts,
+  getProductByBrand
 };
