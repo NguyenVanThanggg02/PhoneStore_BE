@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "6638216a451aeee8fd382ef6"
+  },
+  "hangSanXuat": "Apple"
+},
+{
+  "_id": {
+    "$oid": "6638216a451aeee8fd382ef7"
+  },
+  "hangSanXuat": "Samsung"
+},
+{
+  "_id": {
+    "$oid": "6638216a451aeee8fd382ef8"
+  },
+  "hangSanXuat": "Oppo"
+}]

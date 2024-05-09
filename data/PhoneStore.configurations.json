@@ -1,0 +1,73 @@
+[
+  {
+    "_id": {
+      "$oid": "663820cd451aeee8fd382ef3"
+    },
+    "congNgheManHinh": "Super Retina XDR",
+    "doPhanGiai": "2532 x 1170 pixels",
+    "kichThuocManHinh": "6.1 inches",
+    "heDieuHanh": "iOS 14",
+    "viXuLy": "A14 Bionic",
+    "boNhoTrong": "64GB/128GB/256GB",
+    "ram": "4GB",
+    "mangDiDong": "5G",
+    "soKheSim": 1
+  },
+
+  {
+    "_id": {
+      "$oid": "66383ab0e4539dde3f74d758"
+    },
+    "congNgheManHinh": "Retina HD",
+    "doPhanpricei": "1334 x 750 pixels",
+    "kichThuocManHinh": "4.7 inches",
+    "heDieuHanh": "iOS 14",
+    "viXuLy": "A13 Bionic",
+    "boNhoTrong": "64GB/128GB/256GB",
+    "ram": "3GB",
+    "mangDiDong": "4G",
+    "soKheSim": 1
+  },
+  {
+    "_id": {
+      "$oid": "663846b3e4539dde3f74d76a"
+    },
+    "congNgheManHinh": "Super Retina XDR",
+    "doPhanGiai": "2532 x 1170 pixels",
+    "kichThuocManHinh": "6.1 inches",
+    "heDieuHanh": "iOS 15",
+    "viXuLy": "A15 Bionic",
+    "boNhoTrong": "128GB/256GB/512GB/1TB",
+    "ram": "6GB",
+    "mangDiDong": "5G",
+    "soKheSim": 1
+  },
+{
+  "_id": {
+    "$oid": "663846b3e4539dde3f74d76b"
+  },
+  "congNgheManHinh": "Dynamic AMOLED",
+        "doPhanGiai": "2400 x 1080 pixels",
+        "kichThuocManHinh": "6.2 inches",
+        "heDieuHanh": "Android 11",
+        "viXuLy": "Exynos 2100",
+        "boNhoTrong": "128GB/256GB/512GB",
+        "ram": "8GB",
+        "mangDiDong": "5G",
+        "soKheSim": 2
+},
+  {
+    "_id": {
+      "$oid": "663846b3e4539dde3f74d76c"
+    },
+    "congNgheManHinh": "AMOLED",
+        "doPhanGiai": "3216 x 1440 pixels",
+        "kichThuocManHinh": "6.7 inches",
+        "heDieuHanh": "ColorOS 11",
+        "viXuLy": "Snapdragon 888",
+        "boNhoTrong": "256GB/512GB/1TB",
+        "ram": "12GB",
+        "mangDiDong": "5G",
+        "soKheSim": 2
+  }
+]

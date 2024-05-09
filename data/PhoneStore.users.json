@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "6639786d743f79c9b97fc1c4"
+  },
+  "full_name": "Nguyen Van Thang",
+  "username": "ThangNV",
+  "email": "thang@gmail.com",
+  "password": "12345",
+  "gender": "Male",
+  "birthday": {
+    "$date": "2002-12-10T00:00:00.000Z"
+  },
+  "phone": "0368286888",
+  "address": "Sóc Sơn - Hà Nội",
+  "role": 1
+},
+{
+  "_id": {
+    "$oid": "663978d8743f79c9b97fc1c5"
+  },
+  "full_name": "Nguyen Van A",
+  "username": "abc",
+  "email": "abc@gmail.com",
+  "password": "12345",
+  "gender": "Male",
+  "birthday": {
+    "$date": "2002-10-12T00:00:00.000Z"
+  },
+  "phone": "0368286666",
+  "address": "Sóc Sơn - Hà Nội",
+  "role": 0
+}]
