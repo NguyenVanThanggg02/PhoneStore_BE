@@ -1,3 +1,4 @@
+import Configuration from "../models/configuration.js";
 import Product from "../models/product.js";
 
 const fetchAll = async () => {
@@ -56,23 +57,70 @@ const fetchSimilarProduct = async (id) => {
     throw new Error(error.toString());
   }
 };
-const fetchProductByBrand  = async(id) =>{
+const fetchProductByBrand = async (id) => {
   try {
     const brandId = await Product.find({ brand: id })
-    .populate("configuration")
-    .populate("brand")
-    .populate("comments").exec()
-    return brandId
+      .populate("configuration")
+      .populate("brand")
+      .populate("comments")
+      .exec();
+    return brandId;
   } catch (error) {
     throw new Error(error.toString());
   }
-}
+};
 
+const createProduct = async ({
+  brand,
+  name,
+  option,
+  quantity,
+  description,
+  images,
+  configuration,
+}) => {
+  try {
+    const existingProductName = await Product.findOne({ name });
+    if (existingProductName) {
+      console.log("Product name already exists");
+    }
+    // Tạo và lưu cấu hình mới
+    const newConfiguration = await Configuration.create(configuration);
+    // await newConfiguration.save();
+
+    // Sử dụng _id của cấu hình mới tạo để tạo sản phẩm
+    const newProduct = await Product.create({
+      brand,
+      name,
+      option,
+      quantity,
+      description,
+      images,
+      configuration: newConfiguration._id, // Tham chiếu đến _id của cấu hình
+    });
+
+    return newProduct;
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+};
+
+const editProduct = async (id, productData) => {
+  try {
+    return await Product.findOneAndUpdate({ _id: id }, productData, {
+      new: true,
+    }).exec();
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+};
 export default {
   fetchAll,
   fetchProductById,
   deleteProductById,
   fetchLatestProduct,
   fetchSimilarProduct,
-  fetchProductByBrand
+  fetchProductByBrand,
+  createProduct,
+  editProduct,
 };

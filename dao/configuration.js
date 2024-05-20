@@ -9,8 +9,37 @@ const fetchAllConfig = async () => {
 };
 const fetchConfigById = async (id) => {
   try {
-    const configId = await Configuration.findOne({_id: id});
-    
+    const configId = await Configuration.findOne({ _id: id });
   } catch (error) {}
 };
-export default { fetchAllConfig };
+
+const createConfiguration = async ({
+  congNgheManHinh,
+  doPhanGiai,
+  kichThuocManHinh,
+  heDieuHanh,
+  viXuLy,
+  boNhoTrong,
+  ram,
+  mangDiDong,
+  soKheSim,
+}) => {
+  try {
+    const newConfig = await Configuration.create({
+      congNgheManHinh,
+      doPhanGiai,
+      kichThuocManHinh,
+      heDieuHanh,
+      viXuLy,
+      boNhoTrong,
+      ram,
+      mangDiDong,
+      soKheSim,
+    });
+    return newConfig;
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+};
+
+export default { fetchAllConfig, createConfiguration };

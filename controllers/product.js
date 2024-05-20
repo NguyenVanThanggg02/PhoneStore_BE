@@ -66,10 +66,65 @@ const getSimilarProducts = async (req, res) => {
 };
 const getProductByBrand = async (req, res) => {
   try {
-    const brandId = await productDao.fetchProductByBrand(req.params.id)
-    res.status(200).json(brandId)
+    const brandId = await productDao.fetchProductByBrand(req.params.id);
+    res.status(200).json(brandId);
   } catch (error) {
     res.status(500).json({ error: error.toString() });
+  }
+};
+
+
+
+
+
+const addProduct = async (req, res) => {
+  try {
+    const {
+      brand,
+      name,
+      option,
+      quantity,
+      description,
+      images,
+      configuration,
+    } = req.body;
+
+    // Sử dụng hàm createProduct để lưu configuration trước và sau đó tạo sản phẩm
+    const newProduct = await productDao.createProduct({
+      brand,
+      name,
+      option,
+      quantity,
+      description,
+      images,
+      configuration,
+    });
+
+    res.status(201).json(newProduct);
+  } catch (error) {
+    if (error.message === "Product name already exists") {
+      return res.status(409).json({ message: "Product name already exists" });
+    }
+    res.status(500).json({ message: error.message });
+  }
+};
+
+
+
+
+
+
+
+
+
+const updateProduct = async (req, res) => {
+  try {
+    const updateProduct = await productDao.editProduct(req.params.id, req.body);
+    res.status(200).json(updateProduct);
+    console.log('Updated product');
+  } catch (error) {
+    res.status(500).json({ error: 'lỗi rồi' });
+    console.log(error.message);
   }
 }
 export default {
@@ -78,5 +133,7 @@ export default {
   removeProductById,
   getLatestProducts,
   getSimilarProducts,
-  getProductByBrand
+  getProductByBrand,
+  addProduct,
+  updateProduct
 };
