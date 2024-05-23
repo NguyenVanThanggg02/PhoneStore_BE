@@ -7,6 +7,9 @@ productRouter.get('/latest', productController.getLatestProducts);
 
 productRouter.get('/:id',productController.getProductById);
 productRouter.delete('/:id',productController.removeProductById);
+productRouter.post('/',productController.addProduct);
 productRouter.get('/brand/:id',productController.getSimilarProducts);
+productRouter.get('/bybrand/:id',productController.getProductByBrand);
+productRouter.put('/:id', productController.updateProduct)
 
 export default productRouter

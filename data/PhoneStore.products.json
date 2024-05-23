@@ -30,14 +30,12 @@
       "$oid": "663820cd451aeee8fd382ef3"
     },
     "images": [
-      
-         "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini-2.png",
-     
-         "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini-3.png",
-         "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini-4.png",
-         "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini.png",
-         "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini-5.png",
-         "https://img.enaa.com/oddelki/telefonija/Assets/product_images/apple_iphone_12_128gb_purple_de_telyz28o1npyh.JPG"
+      "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini-2.png",
+      "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini-3.png",
+      "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini-4.png",
+      "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini.png",
+      "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini-5.png",
+      "https://img.enaa.com/oddelki/telefonija/Assets/product_images/apple_iphone_12_128gb_purple_de_telyz28o1npyh.JPG"
     ],
     "favorite": true,
     "comments": [],
@@ -48,7 +46,6 @@
       "$date": "2024-03-20T21:53:09.576Z"
     }
   },
-
   {
     "_id": {
       "$oid": "6638468de4539dde3f74d765"
@@ -84,10 +81,10 @@
       "$oid": "66383ab0e4539dde3f74d758"
     },
     "images": [
-         "https://onewaymobile.vn/images/products/2022/07/08/original/iphone-12-promax-oneway_1657260526.png",
-         "https://achaumobile.com/wp-content/uploads/2022/03/iPhone-12-Pro-3.png",
-         "https://www.phoneshopkenya.co.ke/wp-content/uploads/2021/01/Apple-iPhone-12-Pro-b.jpg",
-         "https://ik.imagekit.io/3ixwwooea/tr:n-preview_image_og/UjTj2X2M-.jpg"
+      "https://onewaymobile.vn/images/products/2022/07/08/original/iphone-12-promax-oneway_1657260526.png",
+      "https://achaumobile.com/wp-content/uploads/2022/03/iPhone-12-Pro-3.png",
+      "https://www.phoneshopkenya.co.ke/wp-content/uploads/2021/01/Apple-iPhone-12-Pro-b.jpg",
+      "https://ik.imagekit.io/3ixwwooea/tr:n-preview_image_og/UjTj2X2M-.jpg"
     ],
     "favorite": true,
     "comments": [],
@@ -96,9 +93,9 @@
     },
     "updatedAt": {
       "$date": "2024-04-20T21:53:09.576Z"
-    }
+    },
+    "quantity": 2
   },
-
   {
     "_id": {
       "$oid": "6638468de4539dde3f74d766"
@@ -129,10 +126,10 @@
       "$oid": "663846b3e4539dde3f74d76a"
     },
     "images": [
-         "https://istore.pw/wp-content/uploads/2021/10/5-600x600.jpg",
-         "https://clickbuy.com.vn/uploads/images/2022/04/avt-iphone-13-pro-max-gold.png",
-         "https://clickbuy.com.vn/uploads/images/2022/03/avt-iphone-13-pro-max-green.png",
-         "https://techland.com.vn/wp-content/uploads/2021/09/iphone-13-pro-graphite-select.png"
+      "https://istore.pw/wp-content/uploads/2021/10/5-600x600.jpg",
+      "https://clickbuy.com.vn/uploads/images/2022/04/avt-iphone-13-pro-max-gold.png",
+      "https://clickbuy.com.vn/uploads/images/2022/03/avt-iphone-13-pro-max-green.png",
+      "https://techland.com.vn/wp-content/uploads/2021/09/iphone-13-pro-graphite-select.png"
     ],
     "favorite": true,
     "comments": [],
@@ -141,7 +138,8 @@
     },
     "updatedAt": {
       "$date": "2024-04-21T21:53:09.576Z"
-    }
+    },
+    "quantity": 3
   },
   {
     "_id": {
@@ -178,10 +176,10 @@
       "$oid": "663846b3e4539dde3f74d76b"
     },
     "images": [
-         "https://clickbuy.com.vn/uploads/images/2021/01/thumb_S21-3.jpg",
-         "https://mobileworld.com.vn/uploads/product/11_2021/thumbs/galaxy-s21-ultra-5g-128gb-moi-99-like-new-ban-my-2sim-chip-snapdragon-888.webp",
-         "https://http2.mlstatic.com/D_Q_NP_914696-MLU70616375426_072023-O.webp",
-         "https://images.kabum.com.br/produtos/fotos/266824/smartphone-samguns-galaxy-s21-fe-128gb-ram-6gb-5g-camera-tripla-violeta-sm-g990elvrzto_1641416374_g.jpg"
+      "https://clickbuy.com.vn/uploads/images/2021/01/thumb_S21-3.jpg",
+      "https://mobileworld.com.vn/uploads/product/11_2021/thumbs/galaxy-s21-ultra-5g-128gb-moi-99-like-new-ban-my-2sim-chip-snapdragon-888.webp",
+      "https://http2.mlstatic.com/D_Q_NP_914696-MLU70616375426_072023-O.webp",
+      "https://images.kabum.com.br/produtos/fotos/266824/smartphone-samguns-galaxy-s21-fe-128gb-ram-6gb-5g-camera-tripla-violeta-sm-g990elvrzto_1641416374_g.jpg"
     ],
     "favorite": true,
     "comments": [],
@@ -190,7 +188,8 @@
     },
     "updatedAt": {
       "$date": "2024-04-22T21:53:09.576Z"
-    }
+    },
+    "quantity": 5
   },
   {
     "_id": {
@@ -223,11 +222,8 @@
     },
     "images": [
       "https://cdn.viettelstore.vn/Images/Product/ProductImage/783407166.jpeg",
-
       "https://www.smartapp.it/416-large_default/oppo-find-x3-pro-5g-dual-sim-12gb-ram-256gb-black-eu.jpg",
-
       "https://img.hungmobile.vn/hungmobile-vn/2021/06/oppo-find-x3-pro-ma-u-tra-ng.jpg",
-
       "https://techcart.com.au/wp-content/uploads/2021/05/59122.jpeg"
     ],
     "favorite": true,
@@ -237,6 +233,52 @@
     },
     "updatedAt": {
       "$date": "2024-05-01T21:53:09.576Z"
-    }
+    },
+    "quantity": 6
+  },
+  {
+    "_id": {
+      "$oid": "66417780c52daf647176e588"
+    },
+    "brand": {
+      "$oid": "6638216a451aeee8fd382ef8"
+    },
+    "name": "Find X3 Proooooooo",
+    "option": [
+      {
+        "color": "Den",
+        "version": "64GB",
+        "price": 9990000
+      },
+      {
+        "color": "Bac",
+        "version": "128GB",
+        "price": 11990000
+      },
+      {
+        "color": "Cam",
+        "version": "256GB",
+        "price": 13990000
+      }
+    ],
+    "description": "Find X3 Pro với màn hình AMOLED, chip Snapdragon 888, camera chuyên nghiệp.",
+    "configuration": {
+      "$oid": "663846b3e4539dde3f74d76c"
+    },
+    "images": [
+      "https://cdn.viettelstore.vn/Images/Product/ProductImage/783407166.jpeg",
+      "https://www.smartapp.it/416-large_default/oppo-find-x3-pro-5g-dual-sim-12gb-ram-256gb-black-eu.jpg",
+      "https://img.hungmobile.vn/hungmobile-vn/2021/06/oppo-find-x3-pro-ma-u-tra-ng.jpg",
+      "https://techcart.com.au/wp-content/uploads/2021/05/59122.jpeg"
+    ],
+    "favorite": true,
+    "comments": [],
+    "createdAt": {
+      "$date": "2024-05-01T19:38:22.884Z"
+    },
+    "updatedAt": {
+      "$date": "2024-05-01T21:53:09.576Z"
+    },
+    "quantity": 8
   }
 ]

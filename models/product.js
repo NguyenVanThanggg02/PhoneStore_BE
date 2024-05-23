@@ -8,7 +8,7 @@ const productSchema = new Schema(
     brand: {
       type: Schema.Types.ObjectId,
       ref: "brands",
-      required: true,
+      required: false,
     },
     name: {
       type: String,
@@ -41,7 +41,7 @@ const productSchema = new Schema(
     categories: {
       type: Schema.Types.ObjectId,
       ref: "categories",
-      required: true,
+      required: false,
     },
     configuration: {
       type: Schema.Types.ObjectId,
@@ -58,7 +58,7 @@ const productSchema = new Schema(
       {
         type: Schema.Types.ObjectId,
         ref: "comments",
-        require: true,
+        require: false,
       },
     ],
   },
