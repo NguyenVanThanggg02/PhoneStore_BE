@@ -114,6 +114,19 @@ const editProduct = async (id, productData) => {
     throw new Error(error.toString());
   }
 };
+
+
+const fetchProductByUniqueBrand = async (brand) => {
+  try {
+    return await Product.find({ brand: brand })
+     .populate("configuration")
+     .populate("brand")
+     .populate("comments")
+     .exec();
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+}
 export default {
   fetchAll,
   fetchProductById,
@@ -123,4 +136,5 @@ export default {
   fetchProductByBrand,
   createProduct,
   editProduct,
+  fetchProductByUniqueBrand
 };
