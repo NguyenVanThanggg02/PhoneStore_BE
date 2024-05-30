@@ -20,9 +20,9 @@ const removeListCartOfUser = async (id) => {
     }
 }
 
-const addProductToCart = async (userId, productId, quantity) => {
+const addProductToCart = async (userId, productId,price,version,color, quantity) => {
     try {
-      const newCartItem = new Cart({ userId, productId, quantity });
+      const newCartItem = new Cart({ userId, productId, price,version,color,quantity });
       await newCartItem.save();
       return newCartItem;
     } catch (error) {

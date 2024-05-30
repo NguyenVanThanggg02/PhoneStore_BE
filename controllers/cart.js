@@ -31,8 +31,8 @@ const deleteListCartOfUser = async (req, res) => {
 
 const addProductToCart = async (req, res) => {
     try {
-      const { userId, productId, quantity } = req.body;
-      const newCartItem = await cartDao.addProductToCart(userId, productId, quantity);
+      const { userId, productId,price,version,color, quantity } = req.body;
+      const newCartItem = await cartDao.addProductToCart(userId, productId,price,version,color, quantity);
       res.status(201).json(newCartItem);
     } catch (error) {
       res.status(500).json({ message: error.toString() });
