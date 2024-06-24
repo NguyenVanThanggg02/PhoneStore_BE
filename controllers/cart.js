@@ -28,6 +28,14 @@ const deleteListCartOfUser = async (req, res) => {
         
     }
 }
+// const removeCartByUser = async (req, res) => {
+//   try {
+//     const result = await cartDao.removeCartByUser(req.params.userId);
+//     res.status(200).json(result);
+//   } catch (error) {
+//     res.status(500).json({ error: error.toString() });
+//   }
+// };
 
 const addProductToCart = async (req, res) => {
     try {

@@ -1,35 +1,20 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
-const orderDetailSchema = new mongoose.Schema(
-  {
-    order: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "orders",
-      required: true,
-    },
-    product: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "products",
-      required: true,
-    },
-    quantity: {
-      type: Number,
-      required: true,
-    },
-    price: {
-      type: Number,
-      required: true,
-    },
-    total_cost: {
-      type: Number,
-      required: true,
-    },
+const orderDetailSchema = new mongoose.Schema({
+  productId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "products",
+    required: true,
   },
-  {
-    timestamps: true,
+  quantity: {
+    type: Number,
+    required: true,
+  },
+  price: {
+    type: Number,
+    required: true,
   }
-);
+});
 
-const OrderDetail = mongoose.model("orderDetails", orderDetailSchema);
-
-export default OrderDetail;
+const OrderItem = mongoose.model('orderDetails', orderDetailSchema);
+export default OrderItem;

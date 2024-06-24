@@ -87,7 +87,6 @@ const createProduct = async ({
     // Tạo và lưu cấu hình mới
     const newConfiguration = await Configuration.create(configuration);
     // await newConfiguration.save();
-
     // Sử dụng _id của cấu hình mới tạo để tạo sản phẩm
     const newProduct = await Product.create({
       brand,
