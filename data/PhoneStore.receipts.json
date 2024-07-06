@@ -1,0 +1,45 @@
+[
+  {
+    "_id": {
+      "$oid": "665d2630464f382a20e3a08b"
+    },
+    "userId": {
+      "$oid": "6639786d743f79c9b97fc1c4"
+    },
+    "productId": {
+      "$oid": "66382710e4539dde3f74d74b"
+    },
+    "cartId": {
+      "$oid": "6658a14835eae2d4129e8569"
+    },
+
+    "price": 209,
+    "version": "64GB",
+    "color": "Den",
+    "quantity": 2,
+    "total": 418,
+    "createdAt": "2023-06-01T12:00:00.000Z",
+    "updatedAt": "2023-06-01T12:00:00.000Z"
+  },
+  {
+    "_id": {
+      "$oid": "665d2630464f382a20e3a08c"
+    },
+    "userId": {
+      "$oid": "663978d8743f79c9b97fc1c5"
+    },
+    "productId": {
+      "$oid": "6638468de4539dde3f74d765"
+    },
+    "cartId": {
+      "$oid": "6658a0fd35eae2d4129e83f3"
+    },
+    "price": 32990000,
+    "version": "256GB",
+    "color": "Vang",
+    "quantity": 1,
+    "total": 32990000,
+    "createdAt": "2023-06-02T13:00:00.000Z",
+    "updatedAt": "2023-06-02T13:00:00.000Z"
+  }
+]

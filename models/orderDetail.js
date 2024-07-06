@@ -2,12 +2,7 @@ import mongoose from "mongoose";
 
 const orderDetailSchema = new mongoose.Schema(
   {
-    order: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "orders",
-      required: true,
-    },
-    product: {
+    productId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "products",
       required: true,
@@ -16,20 +11,22 @@ const orderDetailSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
+    version: {
+      type: String,
+      required: true,
+    },
+    color: {
+      type: String,
+      required: true,
+    },
     price: {
       type: Number,
       required: true,
     },
-    total_cost: {
-      type: Number,
-      required: true,
-    },
+    
   },
-  {
-    timestamps: true,
-  }
+  { timestamps: true }
 );
 
 const OrderDetail = mongoose.model("orderDetails", orderDetailSchema);
-
 export default OrderDetail;

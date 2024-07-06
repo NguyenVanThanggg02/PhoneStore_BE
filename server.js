@@ -4,8 +4,9 @@ import * as dotenv from 'dotenv';
 import express, { json } from "express";
 
 import connectDB from "./database.js";
-import {brandRouter,  commentRouter,  configRouter,  productRouter, userRouter} from "./routes/index.js";
+import {brandRouter,  commentRouter,  configRouter,  orderRouter,  productRouter, receiptRouter, userRouter} from "./routes/index.js";
 import searchRouter from "./routes/search.js";
+import cartRouter from "./routes/cart.js";
 dotenv.config();
 //Tạo 1 constant 'app'
 const app = express();
@@ -23,6 +24,9 @@ app.use('/configs', configRouter)
 app.use('/users', userRouter)
 app.use('/comments', commentRouter)
 app.use('/search', searchRouter)
+app.use('/cart', cartRouter)
+app.use('/receipt', receiptRouter)
+app.use('/payment', orderRouter)
 
 
 app.use(function (req, res, next) {

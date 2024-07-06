@@ -73,10 +73,6 @@ const getProductByBrand = async (req, res) => {
   }
 };
 
-
-
-
-
 const addProduct = async (req, res) => {
   try {
     const {
@@ -109,22 +105,23 @@ const addProduct = async (req, res) => {
   }
 };
 
-
-
-
-
-
-
-
-
 const updateProduct = async (req, res) => {
   try {
     const updateProduct = await productDao.editProduct(req.params.id, req.body);
     res.status(200).json(updateProduct);
-    console.log('Updated product');
+    console.log("Updated product");
   } catch (error) {
-    res.status(500).json({ error: 'lỗi rồi' });
+    res.status(500).json({ error: "lỗi rồi" });
     console.log(error.message);
+  }
+};
+
+const getProductByUniqueBrand  = async(req, res) => {
+  try {
+    const product = await productDao.fetchProductByUniqueBrand(req.params.brand);
+    res.status(200).json(product);
+  } catch (error) {
+    res.status(500).json({ error: error.toString() });
   }
 }
 export default {
@@ -135,5 +132,6 @@ export default {
   getSimilarProducts,
   getProductByBrand,
   addProduct,
-  updateProduct
+  updateProduct,
+  getProductByUniqueBrand
 };

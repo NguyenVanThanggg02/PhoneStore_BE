@@ -87,7 +87,6 @@ const createProduct = async ({
     // Tạo và lưu cấu hình mới
     const newConfiguration = await Configuration.create(configuration);
     // await newConfiguration.save();
-
     // Sử dụng _id của cấu hình mới tạo để tạo sản phẩm
     const newProduct = await Product.create({
       brand,
@@ -114,6 +113,19 @@ const editProduct = async (id, productData) => {
     throw new Error(error.toString());
   }
 };
+
+
+const fetchProductByUniqueBrand = async (brand) => {
+  try {
+    return await Product.find({ brand: brand })
+     .populate("configuration")
+     .populate("brand")
+     .populate("comments")
+     .exec();
+  } catch (error) {
+    throw new Error(error.toString());
+  }
+}
 export default {
   fetchAll,
   fetchProductById,
@@ -123,4 +135,5 @@ export default {
   fetchProductByBrand,
   createProduct,
   editProduct,
+  fetchProductByUniqueBrand
 };
