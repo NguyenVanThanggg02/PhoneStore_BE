@@ -37,8 +37,7 @@ orderRouter.get("/top-products", async (req, res) => {
       {
         $limit: 4,
       },
-    ])
-      
+    ]);
 
     if (result.length === 0) {
       return res.status(404).json({ message: "No products found" });
@@ -46,7 +45,7 @@ orderRouter.get("/top-products", async (req, res) => {
 
     // Lấy thông tin chi tiết của các sản phẩm bán chạy nhất
     const topProducts = await Product.find({
-      _id: { $in: result.map((item) => item._id) }
+      _id: { $in: result.map((item) => item._id) },
     }).populate("brand");
 
     // Gộp thông tin chi tiết với số lượng sản phẩm đã bán
@@ -78,12 +77,6 @@ orderRouter.get("/:status", orderController.getOderByStatus);
 orderRouter.get("/:id/:status", orderController.getOderByStatusOfUser);
 orderRouter.get("/:id", orderController.getOrderById);
 
-const config = {
-  app_id: "2553",
-  key1: "PcY4iZIKFCIdgZvA6ueMcMHHUbRLYjPL",
-  key2: "kLtgPl8HHhfvMuDHPwKfgfsY4Ydm9eIz",
-  endpoint: "https://sb-openapi.zalopay.vn/v2/create",
-};
 orderRouter.post("/", async (req, res) => {
   const { paymentMethod, listCart, user } = req.body;
 
@@ -137,6 +130,12 @@ orderRouter.post("/", async (req, res) => {
         .json({ message: "Error saving the order to the database" });
     }
   } else if (paymentMethod === "zalopay") {
+    const config = {
+      app_id: "2553",
+      key1: "PcY4iZIKFCIdgZvA6ueMcMHHUbRLYjPL",
+      key2: "kLtgPl8HHhfvMuDHPwKfgfsY4Ydm9eIz",
+      endpoint: "https://sb-openapi.zalopay.vn/v2/create",
+    };
     const embed_data = {
       redirecturl: "http://localhost:3000/",
     };
